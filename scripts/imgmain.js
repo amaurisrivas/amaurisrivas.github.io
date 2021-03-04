@@ -53,7 +53,7 @@ miAhref.onclick = function() {
 colorPicker.addEventListener("change", watchColorPicker, false);
 
 function watchColorPicker(event) {
-  document.querySelectorAll("p").forEach(function(p) {
-    p.style.color = event.target.value;
+  document.querySelectorAll("h1").forEach(function(h1) {
+    h1.style.color = event.target.value;
   });
 }
