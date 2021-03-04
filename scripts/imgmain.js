@@ -10,7 +10,7 @@ miImage.onclick = function() {
 }
 arrayH[0].textContent = "Imaneges";
 arrayH[1].textContent = "Cambiando";
-arrayH.forEach (e => e.style.background = "Red");
+arrayH.forEach (e => e.style.background = "Blue");
 
 let miButton = document.querySelector('button');
 
