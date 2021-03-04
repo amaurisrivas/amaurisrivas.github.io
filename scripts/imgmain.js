@@ -34,3 +34,18 @@ if (!localStorage.getItem('Usuario')){
 miButton.onclick = function() {
   estableceNombreUsuario();
 }
+
+let miAhref = document.querySelector('a');
+
+function obtener_localizacion() {
+  navigator.geolocation.getCurrentPosition(coordenadas);
+}
+function coordenadas(position) {
+  var latitud = position.coords.latitude;
+  var longitud = position.coords.longitude;
+  alert('Tus coordenadas son: ('+latitud+','+longitud+')');
+}
+
+miAhref.onclick = function() {
+  obtener_localizacion();
+}
