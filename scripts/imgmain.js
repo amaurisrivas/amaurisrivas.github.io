@@ -50,6 +50,8 @@ miAhref.onclick = function() {
   obtener_localizacion();
 }
 
+let colorPicker = document.getElementById('form_color');
+
 colorPicker.addEventListener("change", watchColorPicker, false);
 
 function watchColorPicker(event) {
