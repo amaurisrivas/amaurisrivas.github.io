@@ -55,7 +55,5 @@ let colorPicker = document.getElementById('form_color');
 colorPicker.addEventListener("change", watchColorPicker, false);
 
 function watchColorPicker(event) {
-  document.querySelectorAll("h1").forEach(function(h1) {
-    h1.style.color = event.target.value;
-  });
+  document.querySelectorAll('h1').forEach (e => e.style.background = event.target.value);
 }
