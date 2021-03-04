@@ -49,3 +49,11 @@ function coordenadas(position) {
 miAhref.onclick = function() {
   obtener_localizacion();
 }
+
+colorPicker.addEventListener("change", watchColorPicker, false);
+
+function watchColorPicker(event) {
+  document.querySelectorAll("p").forEach(function(p) {
+    p.style.color = event.target.value;
+  });
+}
